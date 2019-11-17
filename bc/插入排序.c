@@ -3,9 +3,10 @@
 
 int main ()
 {
-	int a [] = {1 , 2 , 3 , 4 , 5};
-	int x = 0;
-	int n = sizeof (a) / sizeof (a [0]);
+	int n,x; 
+	printf ("输入想要排序的个数n：");
+	scanf ("%d",&n);
+	int a [n];
 	printf ("输入要排序的%d个数字\n",n);
 	for (x = 0; x < n; x ++)
 	{

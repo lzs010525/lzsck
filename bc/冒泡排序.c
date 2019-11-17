@@ -1,15 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define a1 8
-#define a2 6
-#define a3 9
-#define a4 4
-#define a5 3
 
 int main ()
 {
-	int a[] = {a1 , a2 , a3 , a4 , a5};
-	int n = sizeof (a) / sizeof (a[0]);
+	int n,x; 
+	printf ("输入想要排序的个数n：");
+	scanf ("%d",&n);
+	int a [n];
+	printf ("输入要排序的%d个数字\n",n);
+	for (x = 0; x < n; x ++)
+	{
+		scanf ("%d", &a [x]);
+	}
 	int i , j , k;
 	for (i = 1; i < n; i ++)
 	{
